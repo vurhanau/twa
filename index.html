@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-        window.Telegram.WebApp.showAlert('Hey there!');
+        window.Telegram.WebApp.showAlert('Hey there 1!');
+        window.Telegram.WebApp.openInvoice("https://vurhanau.github.io/twa/", status => {
+            window.Telegram.WebApp.showAlert(status);
+        });
+        window.Telegram.WebApp.showAlert('Hey there 2!');
     </script>
 </head>
 <body></body>
